@@ -51,7 +51,10 @@ namespace ProtobufCSharp
                 try
                 {
                     var p = new System.Diagnostics.Process();
-                    p.StartInfo.FileName = Path.Combine(toolsPath, "protoc.exe");
+                    p.StartInfo.FileName = Path.Combine(
+                        // hardcoded platform specific tool directory
+                        Path.Combine(toolsPath, "windows_x64"), 
+                        "protoc.exe");
                     p.StartInfo.Arguments = cmdLine;
                     p.StartInfo.RedirectStandardOutput = true;
                     p.StartInfo.UseShellExecute = false;

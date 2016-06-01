@@ -13,7 +13,7 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
                  xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="ProtobufCSharp.D99A0962-0F7E-489B-9DB1-6DFDC7479FE4"
-              Version="1.0.0.1"
+              Version="1.0.0.2"
               Language="en-US"
               Publisher="ProtobufCSharp" />
     <DisplayName>ProtobufCSharp</DisplayName>
