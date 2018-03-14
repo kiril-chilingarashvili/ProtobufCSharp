@@ -11,32 +11,37 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
 <PackageManifest Version="2.0.0"
                  xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
                  xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="ProtobufCSharp.D99A0962-0F7E-489B-9DB1-6DFDC7479FE4"
-              Version="1.0.0.2"
-              Language="en-US"
-              Publisher="ProtobufCSharp" />
-    <DisplayName>ProtobufCSharp</DisplayName>
-    <Description xml:space="preserve">ProtobufCSharp Extension is used to generate C# code from Protobuf definition.</Description>
-    <Icon>Package.ico</Icon>
-  </Metadata>
-  <Installation InstalledByMsi="false">
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,15.0)" />
-  </Installation>
-  <Dependencies>
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage"
-           d:Source="Project"
-           d:ProjectName="%CurrentProject%"
-           Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate"
-           d:Source="File"
-           Path="ItemTemplates"
-           d:TargetPath="ItemTemplates\Protobuf.zip" />
-    <Asset Type="Microsoft.VisualStudio.MefComponent"
-           d:Source="Project"
-           d:ProjectName="%CurrentProject%"
-           Path="|%CurrentProject%|" />
-  </Assets>
+    <Metadata>
+        <Identity Id="ProtobufCSharp.D99A0962-0F7E-489B-9DB1-6DFDC7479FE4"
+                  Version="1.0.0.5"
+                  Language="en-US"
+                  Publisher="ProtobufCSharp" />
+        <DisplayName>ProtobufCSharp</DisplayName>
+        <Description xml:space="preserve">ProtobufCSharp Extension is used to generate C# code from Protobuf definition.</Description>
+        <Icon>Package.ico</Icon>
+    </Metadata>
+    <Installation InstalledByMsi="false">
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,16.0)" />
+    </Installation>
+    <Dependencies>
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage"
+               d:Source="Project"
+               d:ProjectName="%CurrentProject%"
+               Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate"
+               d:Source="File"
+               Path="ItemTemplates"
+               d:TargetPath="ItemTemplates\Protobuf.zip" />
+        <Asset Type="Microsoft.VisualStudio.MefComponent"
+               d:Source="Project"
+               d:ProjectName="%CurrentProject%"
+               Path="|%CurrentProject%|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.TextTemplating" Version="[15.0.26208.0,16.0)" DisplayName="Text Template Transformation" />
+        <Prerequisite Id="Microsoft.Net.Component.4.7.1.TargetingPack" Version="[15.6.27406.0,16.0)" DisplayName=".NET Framework 4.7.1 targeting pack" />
+        <Prerequisite Id="Microsoft.NetCore.ComponentGroup.Web" Version="[15.6.27406.0,16.0)" DisplayName=".NET Core 2.0 development tools" />
+    </Prerequisites>
 </PackageManifest>

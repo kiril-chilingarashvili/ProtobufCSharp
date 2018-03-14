@@ -18,13 +18,27 @@ namespace ProtobufCSharp
 {
     [ComVisible(true)]
     [Guid("2748C3FE-A955-4719-A840-61845C77269B")]
-    [CodeGeneratorRegistration(typeof(ProtobufCSharp), "C# Protobuf Class Generator", vsContextGuids.vsContextGuidVCSProject, GeneratesDesignTimeSource = true)]
+    [CodeGeneratorRegistration(
+        typeof(ProtobufCSharp),
+        "ProtobufCSharp", 
+        vsContextGuids.vsContextGuidVCSProject, 
+        GeneratesDesignTimeSource = true)]
+    [CodeGeneratorRegistration(
+        typeof(ProtobufCSharp),
+        "ProtobufCSharp",
+        "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}",
+        GeneratesDesignTimeSource = true)]
+    [CodeGeneratorRegistration(
+        typeof(ProtobufCSharp),
+        "ProtobufCSharp",
+        "{9A19103F-16F7-4668-BE54-9A1E7A4F7556}",
+        GeneratesDesignTimeSource = true)]
     [ProvideObject(typeof(ProtobufCSharp))]
     public class ProtobufCSharp : BaseCodeGeneratorWithSite
     {
 #pragma warning disable 0414
         //The name of this generator (use for 'Custom Tool' property of project item)
-        internal static string name = "";
+        internal static string name = "ProtobufCSharp";
 #pragma warning restore 0414
 
         protected override byte[] GenerateCode(string inputFileContent)
